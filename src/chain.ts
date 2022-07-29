@@ -89,7 +89,7 @@ export async function getHeight({ onNode }: { onNode: Node }): Promise<number> {
 export async function poll(
   th: Encoded.TxHash,
   {
-    blocks = 10, interval, onNode, ...options
+    blocks = 20000, interval, onNode, ...options
   }:
   { blocks?: number; interval?: number; onNode: Node } & Parameters<typeof _getPollInterval>[1],
 ): Promise<TransformNodeType<SignedTx>> {
